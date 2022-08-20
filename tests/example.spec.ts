@@ -8,6 +8,7 @@ const urls = [
 
 for (const url of urls) {
   test(`${url} 存在確認`, async ({ page }) => {
+    console.log(url);
     await page.goto(url);
   });
 }
