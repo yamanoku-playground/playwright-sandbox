@@ -12,4 +12,6 @@ jobs:
       with:
         node-version: '16.x'
     - name: Run Playwright tests
-      run: npx playwright test
+      run: |
+        npm ci
+        npx playwright test
